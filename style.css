@@ -1,0 +1,112 @@
+h1{
+    color:blue#3a241d;
+    text-align: center;
+    font-size: 75px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20%;
+}
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+#left-container {
+	background-color: #eee;
+	width: 15%;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
+}
+
+#right-container {
+	background-color: #eee;
+	width: 15%;
+	right: 0px;
+	top: 0px;
+	position: absolute;
+	height: 100%;
+	padding: 10px;
+}
+.plant-holder {
+	position: relative;
+	height: 13%;
+	left: -10px;
+}
+
+.plant {
+	position: absolute;
+	max-width: 150%;
+	max-height: 150%;
+	z-index: 2;
+}
+.plant:hover{
+    mask-image: linear-gradient(rgb(0 0 0 / 100%), transparent);
+    transform: scale(1.1);
+}
+
+#terrarium{
+    display: flex;
+    justify-content: center;
+}
+.jar-walls {
+	height: 80%;
+	width: 40%;
+	background: #d1e1df;
+	border-radius: 4rem;
+	position: absolute;
+	bottom: 0.5%;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+.jar-top {
+	width: 30%;
+	height: 5%;
+	background: #d1e1df;
+	position: absolute;
+	bottom: 80.5%;
+	opacity: 0.7;
+	z-index: 1;
+}
+
+.jar-bottom {
+	width: 30%;
+	height: 1%;
+	background: #d1e1df;
+	position: absolute;
+	bottom: 0%;
+	opacity: 0.7;
+}
+
+.dirt {
+	width: 39%;
+	height: 20%;
+	background: #3a241d;
+	position: absolute;
+	border-radius: 0 0 4rem 4rem;
+	bottom: 1%;
+	opacity: 0.7;
+	z-index: -1;
+}
+.jar-glossy-long{
+    width: 2.5%;
+    height: 10%;
+    left: 3%;
+    top: 62%;
+    border-radius: 2rem;
+    background: #ffffff;
+    position: absolute;
+    opacity: 0.7;
+    z-index: 1;
+}
+.jar-glossy-short{
+    width: 2.5%;
+    height: 5%;
+    left: 3%;
+    top: 55%;
+    border-radius: 2rem;
+    background: #ffffff;
+    position: absolute;
+    opacity: 0.7;
+    z-index: 1;
+}
